@@ -1,0 +1,107 @@
+Script started on 2020-10-02 01:22:45-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="75" LINES="21"]
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# make
+make -C /lib/modules/5.3.0-kali2-amd64/build M=/root/Downloads modules
+make[1]: Entering directory '/usr/src/linux-headers-5.3.0-kali2-amd64'
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: Leaving directory '/usr/src/linux-headers-5.3.0-kali2-amd64'
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# sudo insmod collatz.ko
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# dmesg -c
+[32m[  800.210529] [0mRemoving module
+[32m[  800.210530] [0m[33mVALUE[0m: N: 25
+[32m[  800.210531] [0m[33mVALUE[0m: N: 76
+[32m[  800.210531] [0m[33mVALUE[0m: N: 38
+[32m[  800.210532] [0m[33mVALUE[0m: N: 19
+[32m[  800.210532] [0m[33mVALUE[0m: N: 58
+[32m[  800.210532] [0m[33mVALUE[0m: N: 29
+[32m[  800.210533] [0m[33mVALUE[0m: N: 88
+[32m[  800.210533] [0m[33mVALUE[0m: N: 44
+[32m[  800.210534] [0m[33mVALUE[0m: N: 22
+[32m[  800.210534] [0m[33mVALUE[0m: N: 11
+[32m[  800.210534] [0m[33mVALUE[0m: N: 34
+[32m[  800.210535] [0m[33mVALUE[0m: N: 17
+[32m[  800.210535] [0m[33mVALUE[0m: N: 52
+[32m[  800.210535] [0m[33mVALUE[0m: N: 26
+[32m[  800.210536] [0m[33mVALUE[0m: N: 13
+[32m[  800.210536] [0m[33mVALUE[0m: N: 40
+[32m[  800.210537] [0m[33mVALUE[0m: N: 20
+[32m[  800.210537] [0m[33mVALUE[0m: N: 10
+[32m[  800.210537] [0m[33mVALUE[0m: N: 5
+[32m[  800.210538] [0m[33mVALUE[0m: N: 16
+[32m[  800.210538] [0m[33mVALUE[0m: N: 8
+[32m[  800.210538] [0m[33mVALUE[0m: N: 4
+[32m[  800.210539] [0m[33mVALUE[0m: N: 2
+[32m[  800.210539] [0m[33mVALUE[0m: N: 1
+[32m[  834.660779] [0mCreating Color list
+[32m[  834.660782] [0mTraversing color list
+[32m[  834.660783] [0m[33mVALUE[0m: N: 25
+[32m[  834.660783] [0m[33mVALUE[0m: N: 76
+[32m[  834.660784] [0m[33mVALUE[0m: N: 38
+[32m[  834.660784] [0m[33mVALUE[0m: N: 19
+[32m[  834.660785] [0m[33mVALUE[0m: N: 58
+[32m[  834.660785] [0m[33mVALUE[0m: N: 29
+[32m[  834.660785] [0m[33mVALUE[0m: N: 88
+[32m[  834.660786] [0m[33mVALUE[0m: N: 44
+[32m[  834.660807] [0m[33mVALUE[0m: N: 22
+[32m[  834.660807] [0m[33mVALUE[0m: N: 11
+[32m[  834.660808] [0m[33mVALUE[0m: N: 34
+[32m[  834.660808] [0m[33mVALUE[0m: N: 17
+[32m[  834.660808] [0m[33mVALUE[0m: N: 52
+[32m[  834.660808] [0m[33mVALUE[0m: N: 26
+[32m[  834.660809] [0m[33mVALUE[0m: N: 13
+[32m[  834.660809] [0m[33mVALUE[0m: N: 40
+[32m[  834.660809] [0m[33mVALUE[0m: N: 20
+[32m[  834.660810] [0m[33mVALUE[0m: N: 10
+[32m[  834.660810] [0m[33mVALUE[0m: N: 5
+[32m[  834.660810] [0m[33mVALUE[0m: N: 16
+[32m[  834.660811] [0m[33mVALUE[0m: N: 8
+[32m[  834.660811] [0m[33mVALUE[0m: N: 4
+[32m[  834.660811] [0m[33mVALUE[0m: N: 2
+[32m[  834.660812] [0m[33mVALUE[0m: N: 1
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# dmesg -c[K[K[K[K[K[K[K[Ksudo rmmod collatz.ko
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# sudo rmmod collatz.ko[13Pdmesg -c
+[32m[  873.054084] [0mRemoving module
+[32m[  873.054085] [0m[33mVALUE[0m: N: 25
+[32m[  873.054086] [0m[33mVALUE[0m: N: 76
+[32m[  873.054086] [0m[33mVALUE[0m: N: 38
+[32m[  873.054087] [0m[33mVALUE[0m: N: 19
+[32m[  873.054087] [0m[33mVALUE[0m: N: 58
+[32m[  873.054088] [0m[33mVALUE[0m: N: 29
+[32m[  873.054088] [0m[33mVALUE[0m: N: 88
+[32m[  873.054089] [0m[33mVALUE[0m: N: 44
+[32m[  873.054089] [0m[33mVALUE[0m: N: 22
+[32m[  873.054090] [0m[33mVALUE[0m: N: 11
+[32m[  873.054090] [0m[33mVALUE[0m: N: 34
+[32m[  873.054090] [0m[33mVALUE[0m: N: 17
+[32m[  873.054091] [0m[33mVALUE[0m: N: 52
+[32m[  873.054091] [0m[33mVALUE[0m: N: 26
+[32m[  873.054091] [0m[33mVALUE[0m: N: 13
+[32m[  873.054092] [0m[33mVALUE[0m: N: 40
+[32m[  873.054092] [0m[33mVALUE[0m: N: 20
+[32m[  873.054093] [0m[33mVALUE[0m: N: 10
+[32m[  873.054093] [0m[33mVALUE[0m: N: 5
+[32m[  873.054093] [0m[33mVALUE[0m: N: 16
+[32m[  873.054094] [0m[33mVALUE[0m: N: 8
+[32m[  873.054094] [0m[33mVALUE[0m: N: 4
+[32m[  873.054095] [0m[33mVALUE[0m: N: 2
+[32m[  873.054095] [0m[33mVALUE[0m: N: 1
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# dmesg -csudo rmmod collatz.ko start=4
+rmmod: ERROR: Module collatz is not currently loaded
+rmmod: ERROR: Module start=4 is not currently loaded
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# sudo rmmod collatz.ko start=4[1P[1P[1P[1P[1P[1@i[1@n[1@s[1@m[1@o[1@d
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# sudo insmod collatz.ko start=4[1Prm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdmesg -c[K
+[32m[  892.960664] [0mCreating Color list
+[32m[  892.960665] [0mTraversing color list
+[32m[  892.960666] [0m[33mVALUE[0m: N: 4
+[32m[  892.960667] [0m[33mVALUE[0m: N: 2
+[32m[  892.960667] [0m[33mVALUE[0m: N: 1
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# dmesg -csudo insmod collatz.ko start=4[1Prm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# sudo rmmod collatz.ko[13Pdmesg -csudo insmod collatz.ko start=4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdmesg -c[K
+[32m[  901.931576] [0mRemoving module
+[32m[  901.931577] [0m[33mVALUE[0m: N: 4
+[32m[  901.931578] [0m[33mVALUE[0m: N: 2
+[32m[  901.931578] [0m[33mVALUE[0m: N: 1
+]0;root@kali: ~/Downloads[01;31mroot@kali[00m:[01;34m~/Downloads[00m# exit
+exit
+
+Script done on 2020-10-02 01:24:14-04:00 [COMMAND_EXIT_CODE="0"]
